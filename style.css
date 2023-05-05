@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(61, 93, 238);
+    height: 3.5rem;
+    padding: 0 10rem;
+}
+
+.wrapper .logo a {
+    display: flex;
+    color: white;
+    font-style: italic;
+    position: relative;
+    text-decoration: none;
+    top: -13px;
+}
+
+.logo a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    margin-top: .9rem;
+}
+
+.plus-color {
+    color: #ffe500;
+    font-weight: 400;
+}
+
+.wrapper .search {
+    width: 27rem;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0.45rem 1rem;
+    border-radius: 0.1rem;
+    box-shadow: 0 0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .search input[type='search'] {
+    width: 100%;
+    border: none;
+}
+
+.wrapper .search input[type='search']::placeholder {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.wrapper .search i {
+    color: rgb(61, 93, 238);
+}
+
+.wrapper .login {
+    width: 7.5rem;
+    height: 2rem;
+
+}
+
+.wrapper .login .loginbtn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(61, 93, 238);
+    background-color: #fff;
+}
+
+.login .content {
+    position: absolute;
+    background: #f1f1f1;
+    width: 16rem;
+    padding: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    min-width: 160;
+    z-index: 10;
+    margin-top: 0.2rem;
+    display: none;
+}
+
+.wrapper .login:hover .content {
+    display: block;
+}
+
+.login .content .singin {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(141, 141, 141);
+}
+
+.login .content .singin h6 {
+    font-size: 0.8rem;
+    color: rgb(61, 93, 238);
+}
+
+.login .content .singin h6:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login .content .singin a {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+}
+
+.login .content .options {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding: 0.8rem 0.5rem 0.2rem;
+    cursor: pointer;
+}
+
+.login .content .options:hover {
+    background: #ececec;
+}
+
+.login .options i {
+    background-color: rgb(61, 93, 238);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 0.4rem;
+}
+
+.login .options h6 {
+    font-size: -0.2rem;
+}
+
+.seller {
+    cursor: pointer;
+    color: #fff;
+}
+
+.seller h6 {
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+.more {
+    position: relative;
+    display: flex;
+    gap: 0.3rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.more h6 {
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+.more i {
+    margin-top: .1rem;
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    gap: 0.3rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.cart h6 {
+    font-size: .9rem;
+    font-weight: 100;
+}
+
+.more .more_content {
+    width: 15rem;
+    padding: 1rem;
+    margin-top: 1.2rem;
+    background-color: #f1f1f1;
+    position: absolute;
+    min-width: 160px;
+    color: #000;
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.2);
+    z-index: 10;
+    display: none;
+}
+
+.more:hover .more_content {
+    display: block;
+}
+
+.more .more_content .content {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.more .more_content .content:hover {
+    background: #ececec;
+}
+
+.more .more_content .content i {
+    color: rgb(61, 93, 238);
+}
+
+.more .more_content .content h6 {
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.top_section {
+    padding: 0.5rem 0 0 0;
+}
+
+.top_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 4rem;
+    box-shadow: 0 0 0.2rem 0.05rem rgba(0, 0, 0, 0.2);
+}
+
+.top_section .content img {
+    width: 4rem;
+    cursor: pointer;
+}
+
+.top_section .content h6 {
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.top_section .content:hover h6 {
+    color: rgb(61, 93, 238);
+}
+
+.swip_section .section img {
+    width: 100%;
+    height: 21rem;
+}
+
+.electronics {
+    width: 99%;
+    height: 60vh;
+    box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.2);
+    margin: .5rem auto;
+    padding: 1rem;
+}
+
+.electronics .essentials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.electronics .essentials .best_electronics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    width: 40%;
+    padding: 10px;
+
+}
+
+.electronics .essentials .best_electronics .content h6 {
+    padding-top: 1rem;
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.electronics .essentials .best_electronics .content p{
+    font-size: 15px;
+    color: #388e3c;
+}
+.electronics .essentials .best_electronics .content h5 {
+    font-size: 13px;
+    font-weight: 100;
+    color: grey;
+}
+
+.electronics .essentials {
+    padding-top: 1rem;
+    
+}
+
+.electronics .essentials .best_electronics img {
+    display: inline;
+    inset: 0px;
+    margin: auto;
+    opacity: 1;
+    max-width: 100%;
+    max-height: 100%;
+    
+
+}
+.electronics .essentials .best_electronics img:hover{
+transform:rotatey(30deg);
+}
+
+.electronics .essentials .best_electronics h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.electronics .essentials .best_electronics button {
+    padding: .5rem;
+    background-color: rgb(61, 93, 238);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.electronics .essentials .best_electronics:hover {
+    cursor: pointer;
+}
+footer{
+    background: #212121;
+}
+footer .content{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+font-size: 0.8rem;
+padding: 3rem;
+margin: 2rem 0 0 0;
+border-bottom: 1px solid rgb(109,109,109);
+}
+footer ul li{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1.5rem
+}
+footer ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+footer h6{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: rgb(87,87,87);
+}
+footer .social{
+    border-right:  1px solid rgb(82,82,82);
+    height: 8rem;
+    margin: 0 1rem 0 0;
+}
+footer .mail{
+    padding: 0 1rem;
+}
+footer .mail,
+footer .office{
+   color: #fff;
+   font-size: 0.7rem;
+   line-height: 1.2rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
